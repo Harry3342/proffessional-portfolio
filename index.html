@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Rodgers Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d16c84aa82.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Harry-Rodgers-Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web developer</p>
+                <h1>Hi, I'm <span>Harry Owino</span> welcome <br>to my  portfolio</h1>
+                <p>A dynamic and skilled Web Developer with 4 years of experience in designing, developing, and maintaining web applications. Proficient in JavaScript, HTML, CSS, Video Editing, PHP, and JSON, with a proven track record of delivering high-quality projects within deadlines. Adept at collaborating with cross-functional teams and stakeholders to achieve project goals. Seeking to leverage expertise and passion for web development in a challenging role.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-----------about section----------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pose.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A dynamic and skilled Web Developer with 4 years of experience in     designing,
+                        developing, and maintaining web applications. Proficient in JavaScript, Flutter,
+                        Android Development, HTML, CSS, Video Editing, PHP, and JSON. Proven track record
+                        of delivering high-quality projects within deadlines. Adept at collaborating with
+                        cross-functional teams and stakeholders to achieve project goals. Seeking to
+                        leverage expertise and passion for web development in a challenging role.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br>Web app Development</li>
+                                <li><span>App Development</span><br>Building Android/ios apps</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br>Designing & Training at Finn Church Aid Institute</li>
+                                <li><span>2022 - 2023</span><br>UI/UX Intern at Fintech Kenya</li>
+                                <li><span>2023 - 2024</span><br>Internship at Jenge Kulture</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019</span><br>Multimedia Training at ADMI (Africa Digital Media Institute)</li>
+                                <li><span>2020 - 2021</span><br>Certificate in Computer Science from St.Paul's University</li>
+                                <li><span>2022 - 2023</span><br>Diploma in Computer Science from St.Paul's University</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------services--------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-cards">
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX Designer | User-focused design for intuitive & beautiful experiences. Skilled in research, prototyping, UI creation & collaboration.  I translate user needs into effective interfaces, having helped Digital Integrated Technologies achieve a  20% increase in user engagement through a redesigned web application, e.g., Finfinancials. My passion lies in crafting delightful user journeys, and I'm always seeking innovative solutions.</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a Web Designer with a passion for crafting user-friendly & visually stunning websites. Skilled in UI/UX principles, information architecture, and responsive design, I transform complex information into intuitive experiences. Having helped Fintech Kenya (Digital Integrated Technologies) achieve a 30% traffic increase through a redesigned website, I'm driven to create impactful web solutions that convert.</p>
+                    <a href="#">Learn more</a>
+
+                </div>                
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>App development has been a new venture that i have recently embarked on. With the onset of tools like flutter and firebase my expertise and knowlege in the field has grown exceptionally fast, and with the penetration of smartphones in sub-sahara Africa i strive to be among the top android & ios developers.</p>
+                    <a href="#">Learn more</a>
+
+                </div>                
+
+            </div>
+        </div>
+    </div>
+
+    <!---------Portfolio--------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="portfolio-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Online grocery shop</h3>
+                    <p>This is an online grocery shop template  download it from github</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Online Teaching Platform Template</h3>
+                    <p>This is a simple template that showcases what an online schooling platform would look like download it from github</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Admin Managegement Dashboard Template</h3>
+                    <p>This is a simple admin dashboard template download it from github</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Harry3342/" class="btn">See more</a>
+    </div>
+</div>
+
+<!----------Contact Me-------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="columns">
+            <div class="contact">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/harry-rodgers-03b8b1222/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Harry3342/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fa-regular fa-envelope"></i></a>
+                    <a href="https://dribbble.com/harryOwino"><i class="fa-brands fa-dribbble"></i></a>
+                </div>
+                <a href="documents/final cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &#169 2024. Made  with <i class="fa-solid fa-heart"></i> by Harry Njoga.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+<script>
+      var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+</body>
+</html>
